@@ -11,12 +11,12 @@ public abstract class Transaction {
     }
 
 }
-class CreateTransaction extends Transaction{
+class Create extends Transaction{
 
     String Username;
     String UserType;
     double AvailableCredit;
-    public CreateTransaction(String Code, String Name, String Type, double Credit)
+    public Create(String Code, String Name, String Type, double Credit)
     {
         super(Code);
         Username = Name;
@@ -26,12 +26,12 @@ class CreateTransaction extends Transaction{
 
 }
 
-class DeleteTransaction extends Transaction{
+class Delete extends Transaction{
 
     String Username;
     String UserType;
     double AvailableCredit;
-    public DeleteTransaction(String Code, String Name, String Type, double Credit)
+    public Delete(String Code, String Name, String Type, double Credit)
     {
         super(Code);
         Username = Name;
