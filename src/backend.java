@@ -13,7 +13,8 @@ public class backend {
             switch (parsed[0])
             {
                 case "01": //create
-
+                    CreateTransaction create = new CreateTransaction(parsed[0],parsed[1],parsed[2],parsed[3]);
+                    //TODO: write Create transaction to output file
                     break;
                 case "02": //delete
 
