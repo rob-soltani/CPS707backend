@@ -55,7 +55,7 @@ public class FileProcessing {
 
     public void processAvailableTickets(ArrayList<Ticket> tickets,File oldAvailableTickets)
     {
-        //TODO:iterate over olduseraccounts file and populate ArrayList of users
+        //TODO:iterate over available tickets file and populate ArrayList of tickets
     }
 
     public void updateUsersTickets(ArrayList<Transaction> transactionlist,ArrayList<User> users,ArrayList<Ticket> tickets)
