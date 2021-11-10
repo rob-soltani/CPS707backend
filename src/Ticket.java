@@ -4,4 +4,5 @@ public class Ticket {
     int numTickets;
     double price;
 
+    Ticket()
 }
