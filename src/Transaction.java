@@ -76,14 +76,14 @@ class Sell extends Transaction{
     String Eventname;
     String Sellersname;
     int NumTickets;
-    double PricePerTicket
+    double PricePerTicket;
     public Sell(String Code, String Name, String seller, int tickets, double Credit)
     {
         super(Code);
         Eventname = Name;
         Sellersname = seller;
         NumTickets = tickets;
-        PricePerTicket = Credit
+        PricePerTicket = Credit;
     }
 
 }
@@ -93,14 +93,23 @@ class Buy extends Transaction{
     String Eventname;
     String Sellersname;
     int NumTickets;
-    double PricePerTicket
+    double PricePerTicket;
     public Buy(String Code, String Name, String seller, int tickets, double Credit)
     {
         super(Code);
         Eventname = Name;
         Sellersname = seller;
         NumTickets = tickets;
-        PricePerTicket = Credit
+        PricePerTicket = Credit;
+    }
+
+}
+
+class EndSession extends Transaction{
+
+    public EndSession(String Code)
+    {
+       super(Code);
     }
 
 }

@@ -21,18 +21,28 @@ public class User {
     // An instance variable of type double to hold the user's credit balance
     private Double Credit;
 
+    public String GetUsername() {
+        return Username;
+    }
+
+    public UserType GetType() {
+        return Type;
+    }
+
+    public Double GetCredit() {
+        return Credit;
+    }
+
     // Class construtor which requires username, user type, and credit balance
     public User(String TheUsername, UserType TheType, Double TheCredit) {
 
         // Default to Sell-Standard if user type is null
-        if (TheType == null)
-        {
+        if (TheType == null) {
             TheType = UserType.SS;
         }
 
         // Default to 0 if credit is null
-        if (TheCredit == null)
-        {
+        if (TheCredit == null) {
             TheCredit = 0.00;
         }
 
@@ -42,8 +52,7 @@ public class User {
 
     }
 
-    private void SetCredit(Double TheCredit)
-    {
+    private void SetCredit(Double TheCredit) {
         BigDecimal RawValue = new BigDecimal(TheCredit.toString());
         BigDecimal RoundedDownValue = RawValue.setScale(2, RoundingMode.DOWN);
 
